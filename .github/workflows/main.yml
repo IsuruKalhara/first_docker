@@ -9,5 +9,7 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
       - name: build env
-        run: pwd
+        run: |
+              docker build -t docker_test .
+              
         
